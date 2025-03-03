@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+h1 {
+    margin-left: 100px;
+    font: italic 40px Georgia, serif;
+    color: #faebda;
+}
+
+/* Add a brown background color to the top navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(99, 51, 48);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    color: #faebda;
+    text-align: center;
+    padding: 38px 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Create a different colored button inside the navigation bar */
+.navbar a#split {
+    background-color: rgb(119, 71, 68);
+    color: white;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #faebda;
+    color: rgb(99, 51, 48);
+}
+
+/* Add a color to the active/current link */
+.navbar a#active {
+    background-color: rgb(205, 124, 83);
+    color: white;
+}
