@@ -30,7 +30,7 @@ h1 {
 /* Create a different colored button inside the navigation bar */
 .navbar a#split {
     background-color: rgb(119, 71, 68);
-    color: white;
+    color: #faebda;
 }
 
 /* Change the color of links on hover */
@@ -45,32 +45,34 @@ h1 {
     color: white;
 }
 
-.search-container {
-    float: center;
+ .search-container {
+    display: flex;
+    justify-content: center;
 }
 
 input[type=text] {
-    display: flex;
-    justify-self: center;
     padding: 6px;
     border: none;
+    border-radius: 3px;
+    width: 600px;
     margin-top: 8px;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 17px;
 }
 
 /* TODO: Work on this. Not functioning!!! */
 .search-container button {
-    float: right;
-    padding: 20px 20px;
-    margin-top: 2px;
+    padding: 12px 20px;
+    color: #faebda;
+    border-radius: 3px;
+    margin-top: 8px;
     margin-right: 16px;
-    background: #ddd;
+    background: sienna;
     font-size: 17px;
     border: none;
     cursor: pointer;
 }
 
-.topnav .search-container button:hover {
-    background: #ccc;
+.search-container button:hover {
+    background: rgb(179, 121, 94);
 }

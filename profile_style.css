@@ -30,7 +30,7 @@ h1 {
 /* Create a different colored button inside the navigation bar */
 .navbar a#split {
     background-color: rgb(119, 71, 68);
-    color: white;
+    color: #faebda;
 }
 
 /* Change the color of links on hover */
