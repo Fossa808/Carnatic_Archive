@@ -44,3 +44,35 @@ h1 {
     background-color: rgb(205, 124, 83);
     color: white;
 }
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text] {
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    width: 600px;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+/* TODO: Work on this. Not functioning!!! */
+.search-container button {
+    padding: 12px 20px;
+    color: #faebda;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: sienna;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: rgb(179, 121, 94);
+}
