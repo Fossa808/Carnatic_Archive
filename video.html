@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carnatic Archive Videos</title>
     <link rel="stylesheet" href="video_style.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script defer src="https://apis.google.com/js/client.js?onload=googleApiClientReady">   </script>
+    <script defer src="video_script.js"></script>
 </head>
 
 <body>
@@ -21,9 +24,17 @@
         </nav>
     </div>
 
-    <div class="search-container">
+    <!--<div class="search-container">
         <input type="text" placeholder="Search..." name="search">
         <button type="submit">Search</button>
+    </div>-->
+    <div id="search-container">
+        <label> <input id="query" placeholder='Search...' type="text" /><button id="search-button"
+                onclick="keyWordsearch()">Search</button></label>
+    </div>
+    <div id="container">
+        <h3>Search Results</h3>
+        <ul id="results"></ul>
     </div>
 </body>
 

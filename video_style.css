@@ -45,13 +45,13 @@ h1 {
     color: white;
 }
 
- .search-container {
+#search-container {
     display: flex;
     justify-content: center;
 }
 
 input[type=text] {
-    padding: 6px;
+    padding: 12px;
     border: none;
     border-radius: 3px;
     width: 600px;
@@ -60,8 +60,7 @@ input[type=text] {
     font-size: 17px;
 }
 
-/* TODO: Work on this. Not functioning!!! */
-.search-container button {
+#search-container button {
     padding: 12px 20px;
     color: #faebda;
     border-radius: 3px;
@@ -73,6 +72,16 @@ input[type=text] {
     cursor: pointer;
 }
 
-.search-container button:hover {
+#search-container button:hover {
     background: rgb(179, 121, 94);
+}
+
+#container{
+    color:black;
+}
+
+h3{
+    text-align: center;
+    color: rgb(99, 51, 48);
+    font: italic 25px Georgia, serif;
 }
