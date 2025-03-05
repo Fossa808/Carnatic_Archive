@@ -1,6 +1,6 @@
 function keyWordsearch(){
     console.log("keyWordsearch start");
-    gapi.client.setApiKey('AIzaSyAtQCJDqcXmOMRKrHDJ7JC8ankZHpxpI-U');
+    gapi.client.setApiKey('API Key');
     gapi.client.load('youtube', 'v3', function(){
             makeRequest();
     });
