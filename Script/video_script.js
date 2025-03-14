@@ -1,6 +1,6 @@
 function keyWordsearch(){
     console.log("keyWordsearch start");
-    gapi.client.setApiKey('API Key');
+    gapi.client.setApiKey('AIzaSyAtQCJDqcXmOMRKrHDJ7JC8ankZHpxpI-U');
     gapi.client.load('youtube', 'v3', function(){
             makeRequest();
     });
@@ -16,12 +16,12 @@ function makeRequest(){
     request.execute(function(response)  {                                                                                    
             $('#results').empty()
             var srchItems = response.result.items;
-            var videoTypeId = response.result.items[0].id;
-            var videoSnippet = response.result.items[0].snippet;
-            var videoId = response.result.items[0].id.videoId;
-            console.log("ID: " + videoTypeId);
-            console.log("Snippet: " + videoSnippet);
-            console.log("Video ID: " + videoId);                
+        //     var videoTypeId = response.result.items[0].id;
+        //     var videoSnippet = response.result.items[0].snippet;
+        //     var videoId = response.result.items[0].id.videoId;
+        //     console.log("ID: " + videoTypeId);
+        //     console.log("Snippet: " + videoSnippet);
+        //     console.log("Video ID: " + videoId);                
             $.each(srchItems, function(index, item){
             vidTitle = item.snippet.title;
             //while()
