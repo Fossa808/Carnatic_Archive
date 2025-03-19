@@ -15,22 +15,46 @@ function makeRequest(){
     });
     request.execute(function(response)  {                                                                                    
             $('#results').empty()
-            var srchItems = response.result.items;
-            var videoTypeId = response.result.items[0].id;
-            var videoSnippet = response.result.items[0].snippet;
-            var videoId = response.result.items[0].id.videoId;
-            console.log("ID: " + videoTypeId);
-            console.log("Snippet: " + videoSnippet);
-            console.log("Video ID: " + videoId);                
+            var srchItems = response.result.items;  
+            var videoTypeId = response.result.items[0].id;             
             $.each(srchItems, function(index, item){
-            vidTitle = item.snippet.title;
-            //while()
+                var videoSnippet = response.result.item.snippet;
+                var vidId = videoTypeId.videoId;
+                var vidTitle = videoSnippet.title;
+                var vidUrl = `https://www.youtube.com/watch?v=${vidId}`;
+                var vidThumburl =  item.snippet.thumbnails.default.url;                 
+                var vidThumbimg = '<pre><img id="thumb" src="'+
+                vidThumburl+'" alt="No  Image  Available." style="width:204px;height:128px"></pre>';
+                console.log(vidId);
+                console.log(videoTypeId);
+                console.log(videoSnippet);
+                console.log(vidTitle);
+                console.log(vidThumburl)
 
-            var vidUrl = `https://www.youtube.com/watch?v=${videoId}`;
-            vidThumburl =  item.snippet.thumbnails.default.url;                 
-            vidThumbimg = '<pre><img id="thumb" src="'+
-            vidThumburl+'" alt="No  Image  Available." style="width:204px;height:128px"></pre>';
-            $('#results').append('<pre>' + vidTitle + vidThumbimg + vidUrl + '</pre>');                      
+                $('#results').append('<pre>' + vidTitle + vidThumbimg + vidUrl + '</pre>');
+                
+        //     var i = 0;
+        //     while(i < 10){
+        //         var videoTypeId = response.result.items[i].id;
+        //         var videoSnippet = response.result.items[i].snippet;
+        //         var vidId = videoTypeId.videoId;
+        //         var vidTitle = videoSnippet.title;
+        //         var vidUrl = `https://www.youtube.com/watch?v=${vidId}`;
+        //         var vidThumburl =  item.snippet.thumbnails.default.url;                 
+        //         var vidThumbimg = '<pre><img id="thumb" src="'+
+        //         vidThumburl+'" alt="No  Image  Available." style="width:204px;height:128px"></pre>';
+        //         console.log(vidId);
+        //         console.log(videoTypeId);
+        //         console.log(videoSnippet);
+        //         console.log(vidTitle);
+        //         console.log(vidThumburl)
+
+        //         $('#results').append('<pre>' + vidTitle + vidThumbimg + vidUrl + '</pre>');
+        //         i++;
+        //     }
+
+                
+                                      
     })  
   })  
 }
