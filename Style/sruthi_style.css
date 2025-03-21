@@ -3,6 +3,13 @@ body {
     background-color: bisque;
 }
 
+:where(h2, h3){
+    margin-left: 100px;
+    font-style: italic;
+    font-family: Georgia, serif;
+    color:rgb(99, 51, 48);
+}
+
 h1 {
     margin-left: 100px;
     font: italic 40px Georgia, serif;
@@ -52,6 +59,11 @@ h2 {
     color: white;
 }
 
+iframe {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 75px;
+}
 /* The container */
 .container {
     display: block;
