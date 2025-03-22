@@ -9,6 +9,36 @@ h1 {
     color: #faebda;
 }
 
+:where(h2, h3){
+    margin-left: 100px;
+    margin-bottom: 0px;
+    font-style: italic;
+    font-family: Georgia, serif;
+    color:rgb(99, 51, 48);
+}
+
+:where(h4,h5){
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-style: italic;
+    font-family: Georgia, serif;
+    color:rgb(168, 114, 89);
+}
+
+p{
+    margin-left: 100px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    width: 85%;
+}
+
+ol{
+    margin-left: 100px;
+    font-style: italic;
+    font-family: Georgia, serif;
+}
+
 /* Add a brown background color to the top navigation */
 .navbar {
     display: flex;
