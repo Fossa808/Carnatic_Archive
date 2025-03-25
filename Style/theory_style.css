@@ -17,7 +17,7 @@ h1 {
     color:rgb(99, 51, 48);
 }
 
-:where(h4,h5){
+:where(h4,h5,h6){
     margin-left: 100px;
     margin-bottom: 0px;
     margin-top: 5px;
@@ -26,7 +26,7 @@ h1 {
     color:rgb(168, 114, 89);
 }
 
-p{
+:where(p,pre){
     margin-left: 100px;
     margin-bottom: 0px;
     margin-top: 5px;
@@ -73,4 +73,9 @@ ol{
 .navbar a#active {
     background-color: rgb(205, 124, 83);
     color: white;
+}
+
+.purandaradasar{
+    display: flex;
+    justify-content: space-between;
 }
