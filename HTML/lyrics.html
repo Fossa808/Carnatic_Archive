@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Carnatic Archive Lyrics</title>
         <link rel="stylesheet" href="../Style/lyrics_style.css">
+        <script defer src="../Script/lyrics_script.js"></script>
     </head>
 
     <body>
@@ -22,9 +23,12 @@
         </div>
 
         <div class="search-container">
-            <input type="text" placeholder="Search..." name="search">
+            <input type="text" id="searchKeyword" placeholder="Search..." name="search">
             <button type="submit">Search</button>
         </div>
+
+        <iframe id="embedIframe" src="" title="Embedded Search Results"></iframe>
+
     </body>
 
 </html>
