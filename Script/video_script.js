@@ -51,10 +51,7 @@ function makeRequest(){
 
         //         $('#results').append('<pre>' + vidTitle + vidThumbimg + vidUrl + '</pre>');
         //         i++;
-        //     }
-
-                
-                                      
+        //     }                                   
     })  
   })  
 }
