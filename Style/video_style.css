@@ -45,7 +45,7 @@ h1 {
     color: white;
 }
 
-#search-container {
+/* #search-container {
     display: flex;
     justify-content: center;
 }
@@ -58,14 +58,24 @@ input[type=text] {
     margin-top: 8px;
     margin-right: 10px;
     font-size: 17px;
+} */
+
+#search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gsc-input-box {
+    width:600px
 }
 
 #search-container button {
-    padding: 12px 20px;
+    padding: 5px 25px;
     color: #faebda;
     border-radius: 3px;
-    margin-top: 8px;
-    margin-right: 16px;
+    margin-top: 0px;
+    margin-right: 5px;
     background: sienna;
     font-size: 17px;
     border: none;

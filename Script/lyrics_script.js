@@ -11,4 +11,5 @@ function searchAndEmbed() {
 
     // Set the iframe src to the search URL
     document.getElementById('embedIframe').src = searchUrl;
+    document.getElementById('embedIframe') = searchUrl;
 }

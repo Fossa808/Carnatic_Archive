@@ -46,26 +46,21 @@ h1 {
 }
 
 .search-container {
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-input[type=text] {
-    padding: 6px;
-    border: none;
-    border-radius: 3px;
-    width: 600px;
-    margin-top: 8px;
-    margin-right: 10px;
-    font-size: 17px;
+.gsc-input-box {
+    width:600px
 }
 
 .search-container button {
-    padding: 12px 20px;
+    padding: 5px 25px;
     color: #faebda;
     border-radius: 3px;
-    margin-top: 8px;
-    margin-right: 16px;
+    margin-top: 0px;
+    margin-right: 5px;
     background: sienna;
     font-size: 17px;
     border: none;
