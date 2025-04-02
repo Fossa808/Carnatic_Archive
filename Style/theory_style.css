@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    padding-top: 100px;
     background-color: bisque;
 }
 
@@ -30,7 +30,7 @@ h1 {
     margin-left: 100px;
     margin-bottom: 0px;
     margin-top: 5px;
-    width: 85%;
+    width: 80%;
 }
 
 ol{
@@ -44,7 +44,11 @@ ol{
     display: flex;
     justify-content: space-between;
     background-color: rgb(99, 51, 48);
+    width: 100%;
+    top: 0px;
+    left: 0px;
     overflow: hidden;
+    position: fixed;
 }
 
 /* Style the links inside the navigation bar */
@@ -75,7 +79,10 @@ ol{
     color: white;
 }
 
-.purandaradasar{
+.composer{
     display: flex;
-    justify-content: space-between;
+}
+#contents{
+    margin-left: 82%;
+    position: fixed;
 }

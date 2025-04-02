@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    padding-top: 100px;
     background-color: bisque;
 }
 
@@ -17,15 +17,16 @@ h1 {
 * {box-sizing: border-box}
 
 /* Style the tab */
-.tab {
+.tabs {
   overflow: hidden;
-  border: 1px solid blanchedalmond;
-  background-color: brown;
+  border: 1px solid bisque;
+  background-color: bisque;
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.tabs button {
   background-color: rgb(99, 51, 48);
+  color:#faebda;
   float: left;
   border: none;
   outline: none;
@@ -35,13 +36,14 @@ h1 {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: beige;
+.tabs button:hover {
+  background-color: #faebda;
+  color:rgb(99, 51, 48);
 }
 
 /* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: burlywood;
+.tabs button.active {
+  background-color: rgb(192, 135, 106);
 }
 
 /* Style the tab content */
@@ -58,7 +60,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     background-color: rgb(99, 51, 48);
+    width: 100%;
+    top: 0px;
+    left: 0px;
     overflow: hidden;
+    position: fixed;
 }
 
 /* Style the links inside the navigation bar */
