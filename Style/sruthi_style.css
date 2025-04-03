@@ -75,6 +75,7 @@ h4,h5{
 .dropdown {
   float: left;
   overflow: hidden;
+  position: relative;
 }
 
 /* Dropdown content (hidden by default) */
