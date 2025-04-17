@@ -31,6 +31,8 @@ h1 {
     margin-bottom: 0px;
     margin-top: 5px;
     width: 80%;
+    font-family: Georgia, serif;
+    font-size: 14px;
 }
 
 ol{
@@ -85,4 +87,19 @@ ol{
 #contents{
     margin-left: 82%;
     position: fixed;
+}
+
+table, th, td {
+    border: 2px sienna;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+th{
+    border-style: groove;
+}
+
+td{
+    border-style: inset;
 }
