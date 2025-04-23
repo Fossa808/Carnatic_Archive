@@ -3,16 +3,17 @@ const path = require('path');
 
 const app = express();
 
-// Optional: serve static assets like CSS/JS/images from a "public" folder
+// Serve static assets (CSS and JS) from a "public" folder
+//Makes the Style and Script temporary "public" folders
 // app.use(express.static('public'));
 app.use('/style', express.static('Style'));
 app.use('/script', express.static('Script'));
 
 
 // Serve profile.html manually
-app.get('/profile', (req, res) => {
-  res.sendFile(path.join(__dirname, 'HTML', 'profile.html'));
-});
+// app.get('/profile', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'HTML', 'profile.html'));
+// });
 
 // Start the server
 const PORT = 3000;
