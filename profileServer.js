@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+
 const app = express();
 
 // Serve static assets (CSS and JS) from a "public" folder
@@ -7,6 +8,12 @@ const app = express();
 // app.use(express.static('public'));
 app.use('/style', express.static('Style'));
 app.use('/script', express.static('Script'));
+
+
+// Serve profile.html manually
+app.get('/profile', (req, res) => {
+  res.sendFile(path.join(__dirname, 'HTML', 'profile.html'));
+});
 
 // Start the server
 const PORT = 3000;
