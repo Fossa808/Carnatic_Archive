@@ -9,6 +9,12 @@ h1 {
     color: #faebda;
 }
 
+h2{
+    margin-left: 100px;
+    font: italic 40px Georgia, serif;
+    color: sienna;
+}
+
 /* Add a brown background color to the top navigation */
 .navbar {
     display: flex;
