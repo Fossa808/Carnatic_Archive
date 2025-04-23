@@ -4,7 +4,10 @@ const path = require('path');
 const app = express();
 
 // Optional: serve static assets like CSS/JS/images from a "public" folder
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use('/style', express.static('Style'));
+app.use('/script', express.static('Script'));
+
 
 // Serve profile.html manually
 app.get('/profile', (req, res) => {
