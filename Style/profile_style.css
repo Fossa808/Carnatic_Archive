@@ -73,6 +73,7 @@ h2{
 .SignUpButton{
     width: 300px;
     border-radius: 10px;
+    border-style: outset;
     background-color: sienna;
     color: #faebda;
 }
