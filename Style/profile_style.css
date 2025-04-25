@@ -9,7 +9,7 @@ h1 {
     color: #faebda;
 }
 
-h2{
+h2 {
     margin-left: 100px;
     font: italic 40px Georgia, serif;
     color: sienna;
@@ -51,7 +51,7 @@ h2{
     color: white;
 }
 
-.SignUpForm_inputs{
+.SignUpForm_inputs {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
@@ -59,24 +59,27 @@ h2{
     gap: 5px;
 }
 
-.SignUpInput{
+.SignUpInput {
     border: 1px solid burlywood;
     border-radius: 7px;
     height: 40px;
     padding: 0 10px;
 }
 
-.SignUpForm_submitButton{
+.SignUpForm_submitButton {
     margin-left: 100px;
     margin-top: 5px;
 }
-.SignUpButton{
+
+.SignUpButton {
     width: 300px;
     border-radius: 10px;
-    border: 2px outset sienna;
+    border: 2px outset brown;
     /* border-style: outset;
     border-color: chocolate; */
-
-    background-color: chocolate;
+    cursor: pointer;
+    outline: none;
+    background-color: sienna;
+    box-shadow: 0 9px #999;
     color: #faebda;
 }
