@@ -80,6 +80,14 @@ h2 {
     cursor: pointer;
     outline: none;
     background-color: sienna;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 4px #8d6d59;
     color: #faebda;
+}
+
+.button:hover {background-color: rgb(183, 114, 82)}
+
+.button:active {
+  background-color: rgb(108, 61, 58);
+  box-shadow: 0 5px #836561;
+  transform: translateY(4px);
 }
