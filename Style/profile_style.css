@@ -87,7 +87,7 @@ h2 {
 .SignUpButton:hover {background-color: rgb(183, 114, 82)}
 
 .SignUpButton:active {
-  background-color: rgb(57, 32, 30);
+  background-color: rgba(161, 91, 85, 0.699);
   box-shadow: 0 5px #836561;
   transform: translateY(4px);
 }
