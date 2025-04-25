@@ -84,9 +84,9 @@ h2 {
     color: #faebda;
 }
 
-.button:hover {background-color: rgb(183, 114, 82)}
+.SignUpButton:hover {background-color: rgb(183, 114, 82)}
 
-.button:active {
+.SignUpButton:active {
   background-color: rgb(108, 61, 58);
   box-shadow: 0 5px #836561;
   transform: translateY(4px);
