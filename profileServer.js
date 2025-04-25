@@ -14,13 +14,13 @@ app.use('/script', express.static('Script'));
 
 const db = new sqlite3.Database('./mydatabase.db');
 
-db.run(
-    CREATE TABLE IF NOT EXISTS users(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT,
-        email TEXT
-    )
-);
+// db.run(
+//     CREATE TABLE IF NOT EXISTS users(
+//         id INTEGER PRIMARY KEY AUTOINCREMENT,
+//         name TEXT,
+//         email TEXT
+//     )
+// );
 
 app.get('/profile', (req, res) => { // Serve profile.html manually
   res.sendFile(path.join(__dirname, 'HTML', 'profile.html'));

@@ -50,3 +50,29 @@ h2{
     background-color: rgb(205, 124, 83);
     color: white;
 }
+
+.SignUpForm_inputs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 300px;
+    gap: 5px;
+}
+
+.SignUpInput{
+    border: 1px solid burlywood;
+    border-radius: 7px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.SignUpForm_submitButton{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+.SignUpButton{
+    width: 300px;
+    border-radius: 10px;
+    background-color: sienna;
+    color: #faebda;
+}
