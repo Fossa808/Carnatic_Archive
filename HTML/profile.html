@@ -30,11 +30,11 @@
 
     <h2>Create your Profile:</h2>
     <!-- <div id=""> -->
+    <form action="userProfile.php" action='post'>
     <div class="SignUpForm_inputs">
-        <input type="text" placeholder="email" class="SignUpInput" value="" spellcheck="false"
-            data-ms-editor="true">
+        <input type="text" placeholder="email" class="SignUpInput" value="" name = "email" spellcheck="false" data-ms-editor="true">
         <input type="password" placeholder="password" class="SignUpInput" value="">
-        <input type="text" placeholder="first name" class="SignUpInput" value="" spellcheck="false"
+        <input type="text" placeholder="first name" class="SignUpInput" value="" name = "firstname" spellcheck="false"
             data-ms-editor="true">
         <input type="text" placeholder="last name" class="SignUpInput" value="" spellcheck="false"
             data-ms-editor="true">
@@ -42,6 +42,8 @@
     <div class="SignUpForm_submitButton">
         <button type="submit" class="SignUpButton" style="height: 40px">Sign Up</button>
     </div>
+    </form>
+
     <!-- <form action="/submit-profile" method="POST">
         <label>Name:</label>
         <input type="text" name="name" required><br><br>
