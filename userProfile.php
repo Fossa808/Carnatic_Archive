@@ -18,7 +18,10 @@
             $password = $_POST["password"];
             
             // Retrieve hashed password from the database
-            $sql = "SELECT password FROM users WHERE username = '$username'";
+            $stmt = $conn->prepare("SELECT password FROM users WHERE email = ?");
+            $stmt->bind_param("s", $email);
+            $stmt->execute();
+            $result = $stmt->get_result();
             $result = $conn->query($sql);
             
             if ($result->num_rows > 0) {
@@ -28,7 +31,6 @@
                 // Verify the password (bcrypt example)
                 if (password_verify($password, $hashed_password)) {
                     // Authentication successful
-                    session_start(); // Start a session
                     $_SESSION["username"] = $username; // Store username in session
                     // Redirect to a protected page
                     header("Location: protected_page.php");
@@ -44,10 +46,10 @@
         }
         ?>
 
-<html>
+<!-- <html>
     <body>
         Welcome <?php echo $_POST["firstname"]; ?> <br>
         Your email address is: <?php echo $_POST["email"]; ?>
     </body>
-</html>
+</html> -->
 
