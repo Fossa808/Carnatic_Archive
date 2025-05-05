@@ -6,7 +6,7 @@
         $servername = "localhost";
         $username = "db_user";
         $password = "db_password";
-        $dbname = "mydatabase";
+        $dbname = "carnaticUSers";
         $conn = new mysqli($servername, $username, $password, $dbname);
         
         if ($conn->connect_error) {
