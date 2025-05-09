@@ -103,3 +103,18 @@ th{
 td{
     border-style: inset;
 }
+
+hr.rounded{
+    border-top: 3px solid rgba(168, 114, 89, 0.91);
+    border-radius: 5px;
+    border-bottom-color: rgba(168, 114, 89, 0.91);
+    margin-left: 100px;
+    margin-right: 170px;
+}
+
+hr.dashed{
+    border-top: 1px dashed rgba(168, 114, 89, 0.91);
+    border-bottom: 1px dashed rgba(168, 114, 89, 0.91);
+    margin-left: 100px;
+    margin-right: 170px;
+}
