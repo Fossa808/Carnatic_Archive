@@ -10,6 +10,7 @@ function searchAndEmbed() {
     const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(keyword)}`;
 
     // Set the iframe src to the search URL
+    console.log(searchUrl);
     document.getElementById('embedIframe').src = searchUrl;
     document.getElementById('embedIframe') = searchUrl;
 }
