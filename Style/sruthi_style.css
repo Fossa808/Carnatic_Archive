@@ -73,20 +73,24 @@ h5 {
   color: white;
 }
 
-.pagination a {
+.column{
+  margin-left: 100px;
+}
+
+.column a {
   color: black;
   float: left;
   padding: 8px 16px;
+  background-color: burlywood;
   text-decoration: none;
-  transition: background-color .3s;
 }
 
-.pagination a.active {
-  background-color: dodgerblue;
-  color: white;
+.column a.active {
+  background-color: saddlebrown;
+  color: bisque;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+/* .pagination a:hover:not(.active) {background-color: #ddd;} */
 
 
 /* .dropdown {
