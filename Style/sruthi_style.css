@@ -1,6 +1,7 @@
 body {
   padding-top: 100px;
   background-color: bisque;
+  overflow: hidden;
 }
 
 :where(h2, h3) {
