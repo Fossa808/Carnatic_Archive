@@ -1,13 +1,3 @@
-// function playVideo(videoID){
-//     var iframe = document.createElement('iframe');
-//     iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
-//     iframe.style.width = '640px';
-//     iframe.style.height = '360px';
-//     iframe.style.border = '0';
-//     document.getElementById('containVideo').appendChild(iframe);
-// }
-
-
 document.addEventListener("click", (event)=> {
     if(event.target.matches("a:not([class]):not([id])")) {
         console.log("clicked the link!!!!");

@@ -1,3 +1,5 @@
+//NOT CURRENTLY IN USE
+
 function searchAndEmbed() {
     // Get the search keyword
     const keyword = document.getElementById('searchKeyword').value.trim();

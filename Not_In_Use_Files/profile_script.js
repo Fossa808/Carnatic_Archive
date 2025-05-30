@@ -1,3 +1,5 @@
+//NOT IN USE ANYMORE
+
 fetch('/users')
     .then(res => res.json())
     .then(data => {
