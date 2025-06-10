@@ -1,12 +1,32 @@
+/* Added padding to the body */
 body {
     padding-top: 100px;
     background-color: bisque;
 }
 
+/* Left margin is moved 100px */
 h1 {
     margin-left: 100px;
     font: italic 40px Georgia, serif;
     color: #faebda;
+}
+
+/* Left margin is moved 100px and color is changed */
+:where(h2, legend) {
+    margin-left: 100px;
+    margin-bottom: 0px;
+    font-style: italic;
+    font-family: Georgia, serif;
+    color:rgb(99, 51, 48);
+}
+
+/* Left margin is moved 100px and font is changed */
+pre{
+    margin-left:100px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-family: Georgia, serif;
+    font-size: 16px;
 }
 
 /* Add a brown background color to the top navigation */
@@ -49,21 +69,7 @@ h1 {
     color: white;
 }
 
-/* #search-container {
-    display: flex;
-    justify-content: center;
-}
-
-input[type=text] {
-    padding: 12px;
-    border: none;
-    border-radius: 3px;
-    width: 600px;
-    margin-top: 8px;
-    margin-right: 10px;
-    font-size: 17px;
-} */
-
+/* Styled the Search bar */
 #search-container {
     margin-top: 20px;
     display: flex;
@@ -94,6 +100,7 @@ input[type=text] {
     color:black;
 }
 
+/* Left margin is moved 100px and font is changed */
 h3{
     text-align: center;
     color: rgb(99, 51, 48);

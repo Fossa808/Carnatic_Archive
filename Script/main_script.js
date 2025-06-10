@@ -1,5 +1,6 @@
+//Opens the tabs that are clicked in the help menu
 function openTab(evt, tabName) {
-    // Declare all variables
+    // Declaration of variables
     var i, tabcontent, tablinks;
   
     // Get all elements with class="tabcontent" and hide them

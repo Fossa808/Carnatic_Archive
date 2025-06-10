@@ -1,9 +1,11 @@
+/* Added padding to the body */
 body {
   padding-top: 100px;
   background-color: bisque;
   overflow: hidden;
 }
 
+/* Styling h2 and h3 tags */
 :where(h2, h3) {
   margin-left: 100px;
   margin-bottom: 0px;
@@ -12,12 +14,14 @@ body {
   color: rgb(99, 51, 48);
 }
 
+/* Left margin is moved 100px */
 h1 {
   margin-left: 100px;
   font: italic 40px Georgia, serif;
   color: #faebda;
 }
 
+/* Styled the Search bar */
 h2 {
   margin-left: 100px;
   font-style: italic;
@@ -25,6 +29,7 @@ h2 {
   color: rgb(99, 51, 48);
 }
 
+/* Left margin is moved 100px and font is changed */
 h4,
 h5 {
   margin-left: 100px;
@@ -74,10 +79,12 @@ h5 {
   color: white;
 }
 
+/* Shifted the column over */
 .column{
   margin-left: 100px;
 }
 
+/* Links styling */
 .column a {
   color: black;
   float: left;
@@ -91,6 +98,7 @@ h5 {
   color: bisque;
 }
 
+/* Iframe */
 iframe {
   margin-top: 40px;
   margin-bottom: 40px;

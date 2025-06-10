@@ -1,14 +1,17 @@
+/* Added padding to the body */
 body {
     padding-top: 100px;
     background-color: bisque;
 }
 
+/* Left margin is moved 100px */
 h1 {
     margin-left: 100px;
     font: italic 40px Georgia, serif;
     color: #faebda;
 }
 
+/* Styling h2 and h3 tags */
 :where(h2, h3){
     margin-left: 100px;
     margin-bottom: 0px;
@@ -17,6 +20,7 @@ h1 {
     color:rgb(99, 51, 48);
 }
 
+/* Left margin is moved 100px and font is changed */
 :where(h4,h5,h6){
     margin-left: 100px;
     margin-bottom: 0px;
@@ -26,6 +30,7 @@ h1 {
     color:rgb(168, 114, 89);
 }
 
+/* Left margin is moved 100px and font is changed */
 :where(p,pre){
     margin-left: 100px;
     margin-bottom: 0px;
@@ -81,14 +86,18 @@ ol{
     color: white;
 }
 
+/* Changed the display of the composer tag to flex */
 .composer{
     display: flex;
 }
+
+/* Rearranged the positioning */
 #contents{
     margin-left: 82%;
     position: fixed;
 }
 
+/* Table Styling */
 table, th, td {
     border: 2px sienna;
     border-radius: 10px;
@@ -104,6 +113,7 @@ td{
     border-style: inset;
 }
 
+/* Line Breaks */
 hr.rounded{
     border-top: 3px solid rgba(168, 114, 89, 0.91);
     border-radius: 5px;
